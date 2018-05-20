@@ -1,0 +1,28 @@
+.beer-ranking {
+    color: white;
+    height: 75%;
+    background-color: black;
+    margin: 20px 5% 0 5%;
+    
+    .ranking-row {
+        height: 20%;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 10px 0;
+        
+        .col {
+            margin: auto;
+            padding: 0;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .beer-img {
+            height: 100%;
+        }
+    }
+}

@@ -59,7 +59,7 @@ export default class App extends React.Component {
 		const averages = Object.keys(grouped).map(beerId => {
 			const evals = grouped[beerId].map(user => user.rating);
 			const sum = evals.reduce((a,b) => a + b);
-			const avg = sum / evals.length;
+			const avg = parseFloat(sum / evals.length).toPrecision(2);
 			return {
 				"beer": grouped[beerId][0].beer,
 				"avgEval": avg,
@@ -185,20 +185,24 @@ export default class App extends React.Component {
 		}
 
 		return stars;
-	}
+    }
 
 	render() {
 		return (
 			<div className='App'>
 				<Row className="header-row">
 					<Col>
-						<img src={require('styles/assets/LogoDegusta.png')} className="header-logo" />
+						<a href='/rank'>
+                            <img src={require('styles/assets/LogoDegusta.png')} className="header-logo" />
+                        </a>
 					</Col>
 					<Col className="header-title-container">
 						<span className="header-title">Avaliação das cervejas Degusta Sanca</span>
 					</Col>
 					<Col>
-						<img src={require('styles/assets/LogoCervejeiroSmall.png')} className="header-logo" />
+						<a href='/'>
+                            <img src={require('styles/assets/LogoCervejeiroSmall.png')} className="header-logo" />
+                        </a>
 					</Col>
 				</Row>
 				{this.generateBeerGrid()}
