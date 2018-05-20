@@ -62,6 +62,7 @@ export default class Rank extends React.Component {
                     {beer.type}
                 </Col>
                 <Col md={1}>
+                    <img src={require("styles/assets/star.png")} className="rating-star" />
                     {parseFloat(beer.rating).toPrecision(2)}
                 </Col>
             </Row>
