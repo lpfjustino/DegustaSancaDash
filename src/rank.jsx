@@ -83,7 +83,7 @@ export default class Rank extends React.Component {
                         </a>
 					</Col>
 					<Col className="header-title-container">
-						<span className="header-title">Avaliação das cervejas Degusta Sanca</span>
+						<span className="header-title">Avaliação das cervejas Beer Trip</span>
 					</Col>
 					<Col>
 						<a href='/'>
