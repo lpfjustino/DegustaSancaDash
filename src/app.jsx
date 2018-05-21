@@ -193,7 +193,7 @@ export default class App extends React.Component {
 				<Row className="header-row">
 					<Col>
 						<a href='/rank'>
-                            <img src={require('styles/assets/LogoDegusta.png')} className="header-logo" />
+                            <img src={require('styles/assets/LogoCervejeiroSmall.png')} className="header-logo" />
                         </a>
 					</Col>
 					<Col className="header-title-container">
@@ -201,7 +201,7 @@ export default class App extends React.Component {
 					</Col>
 					<Col>
 						<a href='/'>
-                            <img src={require('styles/assets/LogoCervejeiroSmall.png')} className="header-logo" />
+                            <img src={require('styles/assets/logo_beer.png')} className="header-logo" />
                         </a>
 					</Col>
 				</Row>
